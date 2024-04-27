@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  /* Neutral Color */
+  --neutral-10: #ffffff;
+  --neutral-20: #f6f6f6;
+  --neutral-30: #efefef;
+  --neutral-40: #e4e4e4;
+  --neutral-50: #c9c9c9;
+  --neutral-60: #aaaaaa;
+  --neutral-70: #858585;
+  --neutral-80: #737373;
+  --neutral-90: #565656;
+  --neutral-100: #1e1e1e;
+
+  /* Primary Color */
+  --primary-10: #ffffff;
+  --primary-20: #f5f8fd;
+  --primary-30: #eef2fc;
+  --primary-40: #e1e9f9;
+  --primary-50: #c3d3f3;
+  --primary-60: #a0baed;
+  --primary-70: #789de5;
+  --primary-80: #648ee1;
+  --primary-90: #4376db;
+  --primary-100: #0549cf;
+  --main-primary: #0549cf;
+  --surface-primary: #f0f5ff;
+  --border-primary: #acc2ef;
+  --hover-primary: #043dac;
+  --pressed-primary: #022567;
+  --focused-primary: #cddbf5;
+
+  --main-danger: #f54a45;
+  --hover-danger: #cc3e39;
+  --focused-danger: #fddbda;
+}
+
+body {
+  font-family: Inter;
+}
