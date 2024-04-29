@@ -1,7 +1,6 @@
 import { fireEvent, render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import AtomInput from "./index";
-import { useState } from "react";
 
 describe("COMPONENTS / ATOMS / INPUT", () => {
   describe("RENDER TESTING", () => {

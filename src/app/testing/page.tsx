@@ -1,6 +1,7 @@
 "use client";
 
 import AtomInput from "@/components/atoms/input";
+import AtomTag from "@/components/atoms/tag";
 import { AtomButton } from "@BigStyle";
 import React, { useState, useRef } from "react";
 
@@ -26,6 +27,16 @@ function PageTesting() {
 
       <br />
       <AtomInput ref={inputRef} onChange={() => console.log(inputRef)} />
+
+      <br />
+      <AtomTag
+        variant="neutral"
+        onClick={() => {
+          alert("HEHE");
+        }}
+      >
+        Success
+      </AtomTag>
     </div>
   );
 }

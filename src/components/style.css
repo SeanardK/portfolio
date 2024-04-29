@@ -31,9 +31,47 @@
   --pressed-primary: #022567;
   --focused-primary: #cddbf5;
 
+  /* Secondary Color */
+  --secondary-10: #ffffff;
+  --secondary-20: #fffbf6;
+  --secondary-30: #fff8ef;
+  --secondary-40: #fff2e4;
+  --secondary-50: #ffe5c9;
+  --secondary-60: #ffd6aa;
+  --secondary-70: #ffc585;
+  --secondary-80: #ffbc73;
+  --secondary-90: #ffae56;
+  --secondary-100: #ff931e;
+  --main-secondary: #ff931e;
+  --surface-secondary: #fff8f0;
+  --border-secondary: #ffdbb4;
+  --hover-secondary: #d57b19;
+  --pressed-secondary: #80490f;
+  --focused-secondary: #ffe9d2;
+
+  /* State Color */
+  --main-success: #03a08b;
+  --surface-success: #f0fffd;
+  --border-success: #abdfd8;
+  --hover-success: #028574;
+  --pressed-success: #015045;
+  --focused-success: #cdece8;
+
   --main-danger: #f54a45;
+  --surface-danger: #fff0f0;
+  --border-danger: #fcc3c1;
   --hover-danger: #cc3e39;
+  --pressed-danger: #7b2522;
   --focused-danger: #fddbda;
+
+  --main-warning: #fab000;
+  --surface-warning: #fefaef;
+  --border-warning: #fde5aa;
+  --hover-warning: #d09300;
+  --pressed-warning: #7d5800;
+  --focused-warning: #feefcc;
+
+  --transition: all 0.25s ease-in-out;
 }
 
 body {
