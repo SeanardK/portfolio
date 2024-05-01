@@ -1,0 +1,86 @@
+@import url("../../style.css");
+
+/* Checkbox Style */
+.bs_radio {
+  display: inline-flex;
+  background: var(--primary-10);
+  transition: var(--transition);
+  align-items: center;
+}
+
+.bs_radio * {
+  transition: var(--transition);
+}
+
+.bs_radio:hover .bs_radio--check > div {
+  background: var(--hover-primary);
+}
+
+/* Input Style */
+.bs_radio input {
+  display: none;
+}
+
+/* Disabled Style */
+.bs_radio--disabled .bs_radio--check {
+  border-color: var(--neutral-40);
+  cursor: not-allowed;
+}
+.bs_radio--disabled:hover .bs_radio--check {
+  border-color: var(--neutral-40);
+}
+
+.bs_radio--disabled .bs_radio--check > div,
+.bs_radio--disabled:hover .bs_radio--check > div {
+  background: var(--neutral-40);
+}
+
+/* Check Style */
+.bs_radio--check {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: 0.5px solid #c9c9c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bs_radio--check:hover {
+  border-color: var(--hover-primary);
+}
+
+.bs_radio--checked .bs_radio--check--dot {
+  opacity: 1;
+}
+.bs_radio--checked .bs_radio--check {
+  border-color: var(--main-primary);
+}
+
+.bs_radio--disabled .bs_radio--check {
+  border-color: var(--neutral-40);
+}
+
+.bs_radio--check--dot {
+  opacity: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--main-primary);
+}
+
+/* Label Style */
+.bs_radio--label {
+  /* Text M/Regular */
+  color: var(--neutral-100);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 8px;
+  letter-spacing: -0.084px;
+}
+.bs_radio--disabled .bs_radio--label {
+  color: var(--neutral-60);
+}

@@ -1,6 +1,8 @@
 "use client";
 
+import AtomCheckbox from "@/components/atoms/checkbox";
 import AtomInput from "@/components/atoms/input";
+import AtomRadio from "@/components/atoms/radio";
 import AtomTag from "@/components/atoms/tag";
 import { AtomButton } from "@BigStyle";
 import React, { useState, useRef } from "react";
@@ -37,6 +39,22 @@ function PageTesting() {
       >
         Success
       </AtomTag>
+
+      <br />
+      <AtomCheckbox
+        onChange={() => setIsLoading((prev) => !prev)}
+        variant="dot"
+        checked={isLoading}
+        value={isLoading}
+      />
+      <br />
+      <AtomRadio
+        disabled
+        onChange={() => setIsLoading((prev) => !prev)}
+        checked={isLoading}
+        value={isLoading}
+        label="Label"
+      />
     </div>
   );
 }

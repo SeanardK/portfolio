@@ -125,7 +125,7 @@ describe("COMPONENTS / ATOMS / TAG", () => {
       expect(element).toHaveClass("bs_tag--disabled");
     });
 
-    it("should disabled when 'disabled' prop is true", () => {
+    it("should can run function provided via 'onClick' prop when user click component", () => {
       const onClick = jest.fn();
 
       const { container, getByText } = render(
@@ -137,6 +137,22 @@ describe("COMPONENTS / ATOMS / TAG", () => {
       fireEvent.click(element);
 
       expect(onClick).toHaveBeenCalled();
+    });
+
+    it("should can NOT run function provided via 'onClick' prop when user click component while disabled", () => {
+      const onClick = jest.fn();
+
+      const { container } = render(
+        <AtomTag onClick={onClick} disabled>
+          Text
+        </AtomTag>
+      );
+
+      const element = container.querySelector(".bs_tag");
+
+      fireEvent.click(element);
+
+      expect(onClick).not.toHaveBeenCalled();
     });
   });
 });

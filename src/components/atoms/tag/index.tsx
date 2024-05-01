@@ -61,8 +61,8 @@ function AtomTag({
 
   return (
     <span
+      onClick={!disabled ? onClick : null}
       className={`bs_tag${sizeClass}${variantClass}${disabledClass}${customCSS}`}
-      onClick={onClick}
     >
       {children}
     </span>
