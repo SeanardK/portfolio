@@ -31,9 +31,14 @@ function AtomRadio({
         name={name}
         onChange={handleOnClick}
       />
-      <div className={`bs_radio--check`} onClick={handleOnClick}>
+      <button
+        disabled={disabled}
+        type="button"
+        className={`bs_radio--check`}
+        onClick={handleOnClick}
+      >
         <div className="bs_radio--check--dot" />
-      </div>
+      </button>
 
       {label && (
         <label htmlFor={id} className="bs_radio--label">

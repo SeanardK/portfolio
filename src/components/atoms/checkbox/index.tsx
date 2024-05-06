@@ -31,7 +31,12 @@ function AtomCheckbox({
         id={id}
         name={name}
       />
-      <div className={`bs_checkbox--check`} onClick={handleOnClick}>
+      <button
+        type="button"
+        className={`bs_checkbox--check`}
+        onClick={handleOnClick}
+        disabled={disabled}
+      >
         {variant === "check" && (
           <div className="bs_checkbox--check--check">
             <svg
@@ -51,7 +56,7 @@ function AtomCheckbox({
           </div>
         )}
         {variant === "dot" && <div className="bs_checkbox--check--dot"></div>}
-      </div>
+      </button>
 
       {label && (
         <label htmlFor={id} className="bs_checkbox--label">

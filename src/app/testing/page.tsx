@@ -4,12 +4,9 @@ import AtomCheckbox from "@/components/atoms/checkbox";
 import AtomInput from "@/components/atoms/input";
 import AtomRadio from "@/components/atoms/radio";
 import AtomTag from "@/components/atoms/tag";
+import AtomToogleSwitch from "@/components/atoms/toggleSwitch";
 import { AtomButton } from "@BigStyle";
 import React, { useState, useRef } from "react";
-
-function LeftIcon() {
-  return <div>Icon</div>;
-}
 
 function PageTesting() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,7 +25,11 @@ function PageTesting() {
       </AtomButton>
 
       <br />
-      <AtomInput ref={inputRef} onChange={() => console.log(inputRef)} />
+      <AtomInput
+        placeholder="testing"
+        ref={inputRef}
+        onChange={() => console.log(inputRef)}
+      />
 
       <br />
       <AtomTag
@@ -45,16 +46,19 @@ function PageTesting() {
         onChange={() => setIsLoading((prev) => !prev)}
         variant="dot"
         checked={isLoading}
-        value={isLoading}
+        disabled
       />
       <br />
       <AtomRadio
-        disabled
         onChange={() => setIsLoading((prev) => !prev)}
         checked={isLoading}
-        value={isLoading}
         label="Label"
       />
+
+      <br />
+      <AtomToogleSwitch active disabled>
+        T
+      </AtomToogleSwitch>
     </div>
   );
 }

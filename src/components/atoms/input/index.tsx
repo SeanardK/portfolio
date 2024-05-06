@@ -41,7 +41,7 @@ function AtomInput(
   return (
     <div className={`bs_input${sizeClass}${dangerClass}${css}`}>
       {/* FIXME : left icon position */}
-      {/* {LeftIcon && <div className="bs_input--left_icon">{LeftIcon}</div>} */}
+      {LeftIcon && <div className="bs_input--left_icon">{LeftIcon}</div>}
 
       <input
         placeholder={placeholder}
@@ -51,7 +51,7 @@ function AtomInput(
       />
 
       {/* FIXME : right icon position */}
-      {/* {RightIcon && <div className="bs_input--right_icon">{RightIcon}</div>} */}
+      {RightIcon && <div className="bs_input--right_icon">{RightIcon}</div>}
     </div>
   );
 }

@@ -49,6 +49,10 @@
 .bs_radio--check:hover {
   border-color: var(--hover-primary);
 }
+.bs_radio--check:focus {
+  outline: 3px solid var(--focused-primary);
+  border-color: var(--main-primary);
+}
 
 .bs_radio--checked .bs_radio--check--dot {
   opacity: 1;
@@ -59,6 +63,11 @@
 
 .bs_radio--disabled .bs_radio--check {
   border-color: var(--neutral-40);
+}
+
+.bs_radio--disabled .bs_radio--check:focus {
+  outline: 3px solid var(--neutral-40);
+  border-color: var(--neutral-60);
 }
 
 .bs_radio--check--dot {
