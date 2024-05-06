@@ -4,7 +4,7 @@ import AtomCheckbox from "@/components/atoms/checkbox";
 import AtomInput from "@/components/atoms/input";
 import AtomRadio from "@/components/atoms/radio";
 import AtomTag from "@/components/atoms/tag";
-import AtomToogleSwitch from "@/components/atoms/toggleSwitch";
+import AtomToggleSwitch from "@/components/atoms/toggleSwitch";
 import { AtomButton } from "@BigStyle";
 import React, { useState, useRef } from "react";
 
@@ -56,9 +56,9 @@ function PageTesting() {
       />
 
       <br />
-      <AtomToogleSwitch active disabled>
+      <AtomToggleSwitch active disabled>
         T
-      </AtomToogleSwitch>
+      </AtomToggleSwitch>
     </div>
   );
 }
