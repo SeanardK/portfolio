@@ -71,9 +71,70 @@
   --pressed-warning: #7d5800;
   --focused-warning: #feefcc;
 
+  /* Combination Color */
+  --main-combination_1: #5f32bc;
+  --surface-combination_1: #efeaf9;
+  --border-combination_1: #cabbe9;
+  --hover-combination_1: #4f2a9d;
+  --pressed-combination_1: #30195e;
+  --focused-combination_1: #dfd6f2;
+
+  --main-combination_2: #ffd445;
+  --surface-combination_2: #fffbec;
+  --border-combination_2: #fff1c1;
+  --hover-combination_2: #d5b139;
+  --pressed-combination_2: #806a22;
+  --focused-combination_2: #fff6da;
+
+  --main-combination_3: #03a08b;
+  --surface-combination_3: #e6f6f4;
+  --border-combination_3: #abdfd8;
+  --hover-combination_3: #028574;
+  --pressed-combination_3: #015045;
+  --focused-combination_3: #cdece8;
+
+  --main-combination_4: #ff483d;
+  --surface-combination_4: #ffeceb;
+  --border-combination_4: #ffc2be;
+  --hover-combination_4: #d53c33;
+  --pressed-combination_4: #80241f;
+  --focused-combination_4: #ffdad8;
+
   --transition: all 0.25s ease-in-out;
+
+  --disable-selection: {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  };
 }
 
 body {
   font-family: Inter;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  padding: 0px 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  background-color: rgba(30, 30, 30, 0.12);
+  border-radius: 3px;
+}
+
+/* Utilities Class */
+.bs_disable_selection {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

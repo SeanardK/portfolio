@@ -1,5 +1,6 @@
 "use client";
 
+import AtomAvatar from "@/components/atoms/avatar";
 import AtomCheckbox from "@/components/atoms/checkbox";
 import AtomInput from "@/components/atoms/input";
 import AtomRadio from "@/components/atoms/radio";
@@ -7,6 +8,7 @@ import AtomTag from "@/components/atoms/tag";
 import AtomToggleSwitch from "@/components/atoms/toggleSwitch";
 import { AtomButton } from "@BigStyle";
 import React, { useState, useRef } from "react";
+import Head from "next/head";
 
 function PageTesting() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,7 +16,7 @@ function PageTesting() {
   const inputRef = useRef(null);
 
   return (
-    <div>
+    <>
       <AtomButton
         isLoading={isLoading}
         onClick={() => setIsLoading((prev) => !prev)}
@@ -59,7 +61,9 @@ function PageTesting() {
       <AtomToggleSwitch active disabled>
         T
       </AtomToggleSwitch>
-    </div>
+      <br />
+      <AtomAvatar disabled name="andreas Kurniawan" />
+    </>
   );
 }
 
