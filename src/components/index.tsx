@@ -1,7 +1,7 @@
-import AtomButton from "./atoms/button";
+import AtomButton from "./button";
 
 export { AtomButton };
 
-const BigStyle = {AtomButton};
+const BigStyle = { AtomButton };
 
 export default BigStyle;

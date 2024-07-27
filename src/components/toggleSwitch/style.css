@@ -1,0 +1,51 @@
+@import url("../style.css");
+
+.bs_toggleSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: var(--neutral-80);
+  transition: var(--transition);
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.bs_toggleSwitch:hover {
+  background: var(--surface-primary);
+  cursor: pointer;
+}
+
+.bs_toggleSwitch:active {
+  transition: none;
+  background: var(--neutral-30);
+}
+
+.bs_toggleSwitch:focus {
+  outline: 3px solid var(--focused-primary);
+  border-color: var(--main-primary);
+}
+
+.bs_toggleSwitch:disabled {
+  background: var(--neutral-20);
+  border-color: var(--neutral-30);
+  cursor: not-allowed;
+  color: var(--neutral-60);
+}
+
+.bs_toggleSwitch--active {
+  background: var(--surface-primary);
+  color: var(--main-primary);
+}
+
+.bs_toggleSwitch--size_l {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+
+.bs_toggleSwitch--size_s {
+  height: 32px;
+  width: 32px;
+  padding: 6px;
+}

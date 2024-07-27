@@ -1,0 +1,60 @@
+.bs_progress_bar {
+  min-width: 200px;
+  max-width: 100%;
+  min-height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.bs_progress_bar-container {
+  background: var(--primary-40);
+  width: 100%;
+  position: relative;
+  height: 100%;
+  min-height: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bs_progress_bar-container p {
+  text-shadow: 1px 1px 5px var(--main-primary);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 0px 10px;
+}
+
+.bs_progress_bar-gauge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--main-primary);
+  height: 100%;
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+/* With Label */
+.bs_progress_bar-container-with_label {
+  border-radius: 8px;
+  height: 32px;
+}
+.bs_progress_bar-container-with_label .bs_progress_bar-gauge {
+  border-radius: 8px;
+}
+
+/* Disabled */
+.bs_progress_bar-disabled .bs_progress_bar-container {
+  background: var(--neutral-20);
+}
+.bs_progress_bar-disabled .bs_progress_bar-container p {
+  text-shadow: 1px 1px 5px var(--neutral-60);
+}
+.bs_progress_bar-disabled .bs_progress_bar-gauge {
+  background: var(--neutral-40);
+}

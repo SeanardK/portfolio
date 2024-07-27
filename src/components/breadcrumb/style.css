@@ -1,0 +1,18 @@
+.bs_breadcrumb {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bs_breadcrumb--divider {
+  margin: 0px 5px;
+}
+
+.bs_breadcrumb--menu {
+  margin: 4px 0px;
+}
+
+.bs_breadcrumb--last_menu > div {
+  color: var(--neutral-100);
+}

@@ -1,0 +1,66 @@
+@import url("../style.css");
+
+/* Tag Style */
+.bs_tag {
+  align-items: center;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0px 8px;
+  transition: var(--transition);
+}
+
+/* Size Style */
+.bs_tag--size_s {
+  height: 18px;
+  font-size: 12px;
+}
+.bs_tag--size_m {
+  height: 20px;
+  font-size: 14px;
+}
+.bs_tag--size_l {
+  padding: 0px 10px;
+  height: 24px;
+  font-size: 16px;
+}
+
+/* Variant Style */
+.bs_tag--variant_neutral {
+  border-color: var(--neutral-40);
+  background: var(--neutral-20);
+  color: var(--neutral-100);
+}
+
+.bs_tag--variant_primary {
+  border-color: var(--border-primary);
+  background: var(--surface-primary);
+  color: var(--main-primary);
+}
+
+.bs_tag--variant_success {
+  border-color: var(--border-success);
+  background: var(--surface-success);
+  color: var(--main-success);
+}
+
+.bs_tag--variant_warning {
+  border-color: var(--border-warning);
+  background: var(--surface-warning);
+  color: var(--main-warning);
+}
+
+.bs_tag--variant_danger {
+  border-color: var(--border-danger);
+  background: var(--surface-danger);
+  color: var(--main-danger);
+}
+
+.bs_tag--disabled {
+  border-color: var(--neutral-40);
+  background: var(--neutral-20);
+  color: var(--neutral-60);
+  cursor: not-allowed;
+}

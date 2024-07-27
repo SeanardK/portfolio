@@ -1,0 +1,44 @@
+.bs_pagination {
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+}
+
+.bs_pagination--pages {
+  display: flex;
+  align-items: center;
+}
+
+.bs_pagination--pages button {
+  padding: 0;
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bs_pagination--pages button:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Details */
+.bs_pagination--details {
+  display: flex;
+  align-items: center;
+}
+
+.bs_pagination--details--detail {
+  color: var(--Neutral-100);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.084px;
+}
+
+.bs_pagination--perpage {
+  min-width: 100px;
+  margin-right: 14px;
+}

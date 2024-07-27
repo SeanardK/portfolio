@@ -1,0 +1,20 @@
+{
+  "terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "dev server",
+          "commands": ["pnpm run dev"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "storybook server",
+          "commands": ["pnpm run storybook"]
+        }
+      ]
+    }
+  ]
+}

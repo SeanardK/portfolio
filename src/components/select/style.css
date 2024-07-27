@@ -1,0 +1,85 @@
+.bs_select {
+  display: inline-block;
+  position: relative;
+}
+
+.bs_select--button {
+  background: var(--neutral-10);
+  border-radius: 6px;
+  border: 1px solid var(--neutral-40);
+  display: inline-flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.bs_select--button::-webkit-scrollbar {
+  display: none;
+}
+
+.bs_select--button > div {
+  text-align: left;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+.bs_select--button > div::-webkit-scrollbar {
+  display: none;
+}
+
+.bs_select--button > .bs_button--right_icon {
+  position: absolute;
+  right: 16px;
+  transition: var(--transition);
+  transform: rotate(0deg);
+}
+
+.bs_select--options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 5px 0px;
+}
+
+.bs_select--option_item {
+  cursor: pointer;
+  padding: 6px 16px;
+  width: 100%;
+  border-radius: 0px;
+}
+.bs_select--option_item > .bs_button--right_icon {
+  position: absolute;
+  right: 16px;
+}
+
+.bs_select--option_item:hover {
+  background: var(--neutral-40);
+}
+
+/* Size */
+.bs_select--size_l {
+  height: 40px;
+}
+.bs_select--size_m {
+  height: 32px;
+}
+.bs_select--size_s {
+  height: 24px;
+}
+
+/* Open */
+.bs_select--open > button > .bs_button--right_icon {
+  transform: rotate(180deg);
+}
+
+.bs_select--tag:not(:last-child) {
+  margin-right: 4px;
+}
+.bs_select--tag:last-child {
+  margin-right: 20px;
+}

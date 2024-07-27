@@ -10,26 +10,27 @@ import { useEffect, useState } from "react";
 import htmlParser from "html-react-parser";
 import _ from "lodash";
 import Layout from "@/components/layout";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
-  const Router = useRouter();
-
   const [activeFilter, setActiveFilter] = useState([""]);
 
   const [activeModal, setActiveModal] = useState<number>(0);
 
-  //@ts-ignore
+  // @ts-ignore
   const filteredData: projectInterface[] =
     activeFilter.length > 0
-      ? _.filter(data.projects, (obj: projectInterface) =>
-          _.some(activeFilter, (text) => {
-            return obj.frameworks.includes(text);
-          })
+      ? _.sortBy(
+          _.filter(data.projects, (obj: projectInterface) =>
+            _.some(activeFilter, (text) => {
+              return obj.frameworks.includes(text);
+            })
+          ),
+          ["title"]
         )
-      : data.projects;
+      : _.sortBy(data.projects, ["title"]);
 
-  const activeModalData = data.projects[activeModal - 1];
+  const activeModalData = filteredData[activeModal - 1];
 
   const handleChangeActiveModal = (index: number) => setActiveModal(index);
 
@@ -45,16 +46,14 @@ export default function Home() {
   };
 
   useEffect(() => {
-    Router.push("/projects");
-
     handleShowAnimation();
   }, [activeFilter]);
 
   return (
     <Layout>
-      <main className="p-5">
-        <div className="mb-5 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">PROJECT&apos;S</h1>
+      <main className="p-5 pt-0">
+        <div className="py-5 flex justify-between items-center sticky top-0 z-10 bg-white border-b mb-5">
+          <h1 className="text-2xl font-bold">PROJECT LIST</h1>
 
           <Select
             className="w-[200px]"
@@ -78,21 +77,16 @@ export default function Home() {
                 key={i}
               >
                 <img
+                  key={i}
                   alt="Project Image"
                   className="h-1/2 w-full object-cover object center"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ghX8TQbN341sDKxu87RODQH2F7YLwm3UXw&s"
+                  src={`https://picsum.photos/200?random=${i}`}
                 />
                 <div className="p-3">
                   <h2 className="font-semibold text-lg mb-1 line-clamp-1">
                     {v.title}
                   </h2>
-                  <p className="line-clamp-3 leading-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Libero, cupiditate? Laborum provident libero expedita,
-                    officia natus pariatur officiis at quae corporis autem, quod
-                    veritatis dolorum obcaecati blanditiis? Aut, molestiae
-                    possimus!
-                  </p>
+                  <p className="line-clamp-3 leading-5">{v.description}</p>
                 </div>
               </div>
             </button>
@@ -104,44 +98,55 @@ export default function Home() {
           open={Boolean(activeModal)}
           size="M"
           center
+          header={
+            <h2 className="mb-2 font-bold text-2xl">
+              {activeModalData?.title}
+            </h2>
+          }
+          footer={
+            <div className="flex justify-end sticky bottom-0 bg-white">
+              {activeModalData?.repository && (
+                <Link href={activeModalData?.repository} target="_blank">
+                  <AtomButton size="L" variant="secondary" className="mx-2">
+                    Show Repository
+                  </AtomButton>
+                </Link>
+              )}
+              {activeModalData?.url && (
+                <Link href={activeModalData?.url} target="_blank">
+                  <AtomButton size="L" className="mx-2">
+                    Visit Website
+                  </AtomButton>
+                </Link>
+              )}
+            </div>
+          }
         >
-          <img
-            alt="Project Image"
-            className="h-[250px] mb-5 rounded-md w-full object-cover object center"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ghX8TQbN341sDKxu87RODQH2F7YLwm3UXw&s"
-          />
+          <div className="px-3">
+            <img
+              alt="Project Image"
+              className="h-[250px] mb-5 rounded-md w-full object-cover object center"
+              src={`https://picsum.photos/1000?random=${activeModalData?.title}`}
+            />
+          </div>
 
-          <h2 className="mb-2 font-bold text-2xl">{activeModalData?.title}</h2>
-
-          <p className="leading-5">
+          <p className="leading-5 text-justify">
             {htmlParser(activeModalData?.details || "")}
           </p>
 
-          {activeModalData?.libraries && (
-            <>
-              <h3 className="text-lg font-semibold mt-3">Library :</h3>
+          <h3 className="text-lg font-semibold mt-3">Tools :</h3>
 
-              <div className="[&>*:first-child]:!ml-0">
-                {activeModalData?.libraries.map((v) => (
-                  <AtomTag size="L" variant="primary" className="mx-2" key={v}>
-                    {v}
-                  </AtomTag>
-                ))}
-              </div>
-            </>
-          )}
-
-          <div className="flex justify-end mt-5">
-            {activeModalData?.repository && (
-              <AtomButton size="L" variant="secondary" className="mx-2">
-                Show Repository
-              </AtomButton>
-            )}
-            {activeModalData?.url && (
-              <AtomButton size="L" className="mx-2">
-                Visit Website
-              </AtomButton>
-            )}
+          <div className="[&>*]:mt-2">
+            {activeModalData?.frameworks.map((v) => (
+              <AtomTag size="L" variant="primary" className="mx-2" key={v}>
+                {v}
+              </AtomTag>
+            ))}
+            {activeModalData?.libraries.map((v) => (
+              <AtomTag size="L" variant="primary" className="mx-2" key={v}>
+                {v}
+              </AtomTag>
+            ))}
           </div>
         </AtomModal>
       </main>
