@@ -92,8 +92,7 @@ const projects = [
       "Typescript",
       "Leaflet",
     ],
-    repository: "",
-    url: "https://bigstyle.bigbox.co.id",
+    url: "https://semarmrantasi.semarangkota.go.id/",
   },
   {
     title: "BigStyle",
@@ -126,7 +125,7 @@ const projects = [
     frameworks: ["NextJS", "React"],
     libraries: ["AnimeJS", "Axios", "Material-UI", "SASS", "SocketIO"],
     repository: "",
-    url: "https://bigsocial.bigbox.co.id",
+    url: "https://ic.bigbox.co.id",
   },
   {
     title: "Portal Satu Data Papua Barat",
@@ -135,9 +134,9 @@ const projects = [
     details:
       "Welcome to Satu Data Indonesia, the official data portal for Pemkot Papua Barat. This comprehensive platform is designed to centralize and streamline access to vital data resources, empowering local governments, researchers, and the public with the information they need to drive informed decision-making and foster transparency.<br/><br/>Satu Data Indonesia offers an extensive collection of datasets, encompassing areas such as economic development, environmental management, public health, and education. Our user-friendly interface and robust search capabilities ensure that users can easily discover and access the data they require. Furthermore, the platform supports advanced data visualization and analysis tools, enabling users to transform raw data into actionable insights.<br/><br/By centralizing data resources, Satu Data Indonesia enhances collaboration and innovation within the community, helping to address local challenges and improve public services. Explore our platform today and see how open data can drive progress and development in [specific government entity]. Join us in harnessing the power of data for a better, more transparent future.",
     frameworks: ["Flask"],
-    libraries: ["AnimeJS", "Axios", "Material-UI", "SASS", "SocketIO"],
+    libraries: ["Jinja", "Tailwind"],
     repository: "",
-    url: "https://bigsocial.bigbox.co.id",
+    url: "https://sidassken.bigbox.co.id",
   },
   {
     title: "Portal Satu Data Halmahera Tengah",
@@ -146,9 +145,9 @@ const projects = [
     details:
       "Welcome to Satu Data Indonesia, the official data portal for Pemkot Halmahera Tengah. This comprehensive platform is designed to centralize and streamline access to vital data resources, empowering local governments, researchers, and the public with the information they need to drive informed decision-making and foster transparency.<br/><br/>Satu Data Indonesia offers an extensive collection of datasets, encompassing areas such as economic development, environmental management, public health, and education. Our user-friendly interface and robust search capabilities ensure that users can easily discover and access the data they require. Furthermore, the platform supports advanced data visualization and analysis tools, enabling users to transform raw data into actionable insights.<br/><br/By centralizing data resources, Satu Data Indonesia enhances collaboration and innovation within the community, helping to address local challenges and improve public services. Explore our platform today and see how open data can drive progress and development in [specific government entity]. Join us in harnessing the power of data for a better, more transparent future.",
     frameworks: ["Flask"],
-    libraries: ["AnimeJS", "Axios", "Material-UI", "SASS", "SocketIO"],
+    libraries: ["Jinja", "Tailwind"],
     repository: "",
-    url: "https://bigsocial.bigbox.co.id",
+    url: "https://halteng.bigbox.co.id",
   },
   {
     title: "Portal Satu Data Palu",
@@ -157,9 +156,9 @@ const projects = [
     details:
       "Welcome to Satu Data Indonesia, the official data portal for Pemkot Palu. This comprehensive platform is designed to centralize and streamline access to vital data resources, empowering local governments, researchers, and the public with the information they need to drive informed decision-making and foster transparency.<br/><br/>Satu Data Indonesia offers an extensive collection of datasets, encompassing areas such as economic development, environmental management, public health, and education. Our user-friendly interface and robust search capabilities ensure that users can easily discover and access the data they require. Furthermore, the platform supports advanced data visualization and analysis tools, enabling users to transform raw data into actionable insights.<br/><br/By centralizing data resources, Satu Data Indonesia enhances collaboration and innovation within the community, helping to address local challenges and improve public services. Explore our platform today and see how open data can drive progress and development in [specific government entity]. Join us in harnessing the power of data for a better, more transparent future.",
     frameworks: ["Flask"],
-    libraries: ["AnimeJS", "Axios", "Material-UI", "SASS", "SocketIO"],
+    libraries: ["Jinja", "Tailwind"],
     repository: "",
-    url: "https://bigsocial.bigbox.co.id",
+    url: "https://kotapalu.bigbox.co.id",
   },
   {
     title: "GO : Elevate My Golang Skills with Gin",
@@ -170,7 +169,6 @@ const projects = [
     frameworks: ["GO"],
     libraries: ["Gin", "Bootstrap"],
     repository: "https://github.com/SeanardK/GO-Learn_GIN",
-    url: "https://bigsocial.bigbox.co.id",
   },
   {
     title: "GO : Enhance My Golang Skills with Mux",
@@ -181,7 +179,6 @@ const projects = [
     frameworks: ["GO"],
     libraries: ["MUX", "GORM", "MySQL"],
     repository: "https://github.com/SeanardK/GO-Learn_REST",
-    url: "https://bigsocial.bigbox.co.id",
   },
   {
     title: "GYMShark",
@@ -192,7 +189,6 @@ const projects = [
     frameworks: ["Code Igniter"],
     libraries: ["Tailwind"],
     repository: "https://github.com/SeanardK/GO-Learn_REST",
-    url: "https://bigsocial.bigbox.co.id",
   },
   {
     title:
@@ -204,7 +200,6 @@ const projects = [
     frameworks: ["Flask"],
     libraries: ["Tailwind", "Solr"],
     repository: "https://github.com/SeanardK/learn-flask",
-    url: "https://bigsocial.bigbox.co.id",
   },
   {
     title: "Printindo: A Modern Company Profile with Laravel and Inertia",
@@ -215,7 +210,6 @@ const projects = [
     frameworks: ["Laravel", "VUE"],
     libraries: ["VUE", "Inertia"],
     repository: "https://github.com/SeanardK/printindo",
-    url: "https://bigsocial.bigbox.co.id",
   },
   {
     title: "Panda Coffee: Your Ultimate Coffee Experience",
@@ -237,6 +231,7 @@ const projects = [
     frameworks: ["ExpressJS"],
     libraries: ["MySQL", "Redis"],
     repository: "https://github.com/justrinoo/pandaCoffee-frontend",
+    url: "https://panda-coffee.vercel.app/",
   },
 ];
 
