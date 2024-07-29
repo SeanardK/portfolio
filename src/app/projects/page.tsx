@@ -44,10 +44,26 @@ export default function Home() {
       easing: "easeInOutCubic",
     });
   };
+  const handleModalAnimation = () => {
+    anime({
+      targets: [".bs_modal--container"],
+      opacity: [0, 1],
+      duration: 500,
+      translateY: "-50%",
+      translateX: "-50%",
+      scale: [0.8, 1],
+      delay: anime.stagger(100),
+      easing: "easeInOutCubic",
+    });
+  };
 
   useEffect(() => {
     handleShowAnimation();
   }, [activeFilter]);
+
+  useEffect(() => {
+    handleModalAnimation();
+  }, [activeModalData]);
 
   return (
     <Layout>
