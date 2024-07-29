@@ -161,7 +161,7 @@ const projects = [
     url: "https://kotapalu.bigbox.co.id",
   },
   {
-    title: "GO : Elevate My Golang Skills with Gin",
+    title: "GO - Elevate My Golang Skills with Gin",
     description:
       "I am embarking on an exciting journey to enhance my Golang skills by mastering the Gin framework.",
     details:
@@ -171,7 +171,7 @@ const projects = [
     repository: "https://github.com/SeanardK/GO-Learn_GIN",
   },
   {
-    title: "GO : Enhance My Golang Skills with Mux",
+    title: "GO - Enhance My Golang Skills with Mux",
     description:
       "I am diving into a focused project to enhance my Golang expertise by mastering the Mux router, a key tool for building efficient and scalable web applications",
     details:
@@ -191,8 +191,7 @@ const projects = [
     repository: "https://github.com/SeanardK/GO-Learn_REST",
   },
   {
-    title:
-      "RUNO Blog: A Dynamic Blogging Platform with Solr, Tailwind, and Flask",
+    title: "RUNO Blog - A Dynamic Blogging Platform",
     description:
       "Welcome to RUNO Blog, a modern and sophisticated blogging platform designed to deliver an exceptional reading and writing experience. This application leverages the combined power of Flask, Solr, and Tailwind CSS to offer a feature-rich and highly interactive environment for both bloggers and readers.",
     details:
@@ -202,7 +201,7 @@ const projects = [
     repository: "https://github.com/SeanardK/learn-flask",
   },
   {
-    title: "Printindo: A Modern Company Profile with Laravel and Inertia",
+    title: "Printindo - A Modern Company Profile with Laravel and Inertia",
     description:
       "Printindo is a cutting-edge company profile platform designed to showcase the dynamic capabilities and offerings of a modern printing company. Utilizing the powerful Laravel framework in conjunction with Inertia.js, this project delivers a seamless and interactive user experience while ensuring robust backend performance.",
     details:
@@ -212,18 +211,18 @@ const projects = [
     repository: "https://github.com/SeanardK/printindo",
   },
   {
-    title: "Panda Coffee: Your Ultimate Coffee Experience",
+    title: "Panda Coffee - Your Ultimate Coffee Experience",
     description:
       "Panda Coffee is a beautifully crafted website designed to bring the essence of your favorite coffee shop right to your screen.",
     details:
       "Panda Coffee is a beautifully crafted website designed to bring the essence of your favorite coffee shop right to your screen. With a modern, engaging design and user-friendly features, Panda Coffee offers a comprehensive digital experience that showcases the unique offerings and inviting atmosphere of the coffee shop.<br/></br/>Panda Coffee combines elegance and functionality to deliver an exceptional online presence. The website features a sleek, responsive design that adapts seamlessly to any device, from desktops to mobile phones. It highlights the shop’s diverse menu, cozy ambiance, and special promotions, creating an engaging platform for coffee lovers.<br/></br/>The Panda Coffee website serves as a digital gateway to the coffee shop’s unique experience, blending visual appeal with functional features to enhance customer engagement. By providing a comprehensive view of the menu, streamlining the ordering process, and showcasing the shop’s ambiance, the website strengthens Panda Coffee’s online presence and fosters a deeper connection with patrons. Whether you’re a coffee aficionado or a casual visitor, Panda Coffee’s website offers an enjoyable and convenient way to explore, order, and interact with your favorite coffee shop.",
-    frameworks: ["React", "NextJS"],
+    frameworks: ["NextJS", "React"],
     libraries: ["Bootstrap", "Redux"],
     repository: "https://github.com/justrinoo/pandaCoffee-frontend",
     url: "https://panda-coffee.vercel.app/",
   },
   {
-    title: "BE for Panda Coffee: Your Ultimate Coffee Experience",
+    title: "BE for Panda Coffee - Your Ultimate Coffee Experience",
     description:
       "Panda Coffee is a beautifully crafted website designed to bring the essence of your favorite coffee shop right to your screen.",
     details:

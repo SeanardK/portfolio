@@ -38,7 +38,7 @@
   padding: 14px 24px;
   padding-bottom: 0;
   position: sticky;
-  top: 0;
+  top: -1px;
   background: white;
 }
 .bs_modal--header > div {
@@ -50,7 +50,7 @@
   border-top: 1px solid var(--neutral-40);
   padding: 14px 24px;
   position: sticky;
-  bottom: 0;
+  bottom: -1px;
   background: white;
 }
 

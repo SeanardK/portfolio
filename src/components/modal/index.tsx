@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import { AtomModalType } from "./type";
 import BigStyleUtilsClassName from "@/components/utils/className";
@@ -41,6 +41,12 @@ function AtomModal({
       );
       break;
   }
+
+  useEffect(() => {
+    open
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [open]);
 
   return (
     <div className={`bs_modal${openClass}`}>

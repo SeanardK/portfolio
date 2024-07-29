@@ -79,9 +79,14 @@ export default function Home() {
                 <img
                   key={i}
                   alt="Project Image"
-                  className="h-1/2 w-full object-cover object center"
-                  src={`https://picsum.photos/200?random=${i}`}
+                  className="h-1/2 w-full object-cover object-top border-b"
+                  src={`/banner/${v.title.replace(/ /g, "")}.png`}
                 />
+                <img
+                  src={`/logo/${v.frameworks[0].replace(/ /g, "_")}.svg`}
+                  className="absolute z-10 top-2 right-2 bg-white rounded-lg shadow-md border"
+                />
+
                 <div className="p-3">
                   <h2 className="font-semibold text-lg mb-1 line-clamp-1">
                     {v.title}
@@ -126,7 +131,7 @@ export default function Home() {
             <img
               alt="Project Image"
               className="h-[250px] mb-5 rounded-md w-full object-cover object center"
-              src={`https://picsum.photos/1000?random=${activeModalData?.title}`}
+              src={`/banner/${activeModalData?.title.replace(/ /g, "")}.png`}
             />
           </div>
 
